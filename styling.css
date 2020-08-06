@@ -146,7 +146,8 @@ nav a:hover {
 	font-size: 3.5em;
 	font-weight: 700;
 	background: var(--brs-gradient);
-  	-webkit-background-clip: text;
+	background-clip:text;   
+	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
 
@@ -276,7 +277,8 @@ nav a:hover {
 	bottom:25vh;
 	z-index: 10000;
 	background: linear-gradient(to bottom, #ef4136, #f56132, #f87c31, #fa9436, #fbac40);
-  	-webkit-background-clip: text;
+	background-clip:text;   
+	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
 
@@ -370,6 +372,7 @@ p.lastp {
 	max-width: 400px;
 	font-size: 1.8rem;
 	background: var(--brs-gradient);
+	background-clip:text; 
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 	z-index: 1;
@@ -412,8 +415,9 @@ p.lastp {
 	text-decoration:none;
 	font-size: 6rem;
 	background: var(--brs-gradient);
-  	-webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
+	background-clip:text;  
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	 
 }
 
@@ -438,8 +442,68 @@ p.lastp {
 .where{
 	height:100vh;
 	background-color: var(--brs-mid-grey);
+	display:flex;
+	flex-direction: column;
+}
+
+.where h4 {
+	font-size: 4rem;
+	padding-top: 10vh;
+	margin-left: 4rem;
+	color:var(--brs-light-grey);
+}
+.where p{
+	margin-top:1rem;
+	background-color: var(--brs-light-grey-opacity2);
+	margin-left: 4rem;
+	margin-right: 4rem;
+	max-width: 400px;
+	font-size: 1.2rem;
+	color:white;
+	z-index: 1;
+	padding: 2px;
+	text-align: justify;
+}
+
+.where ul {
+	margin-top:1rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	max-width: 400px;
+	font-size: 1.2rem;
+	color:white;
+	z-index: 1;
+	padding: 2px;
+	text-align: justify;
+	list-style:none;
+	text-transform: uppercase;
+
+}
+
+.where ul li:hover {
+	color:var(--brs-red);
+	font-style: italic;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+.where h5 {
+	font-size: 4rem;
+	margin-left: 4rem;
+	color:var(--brs-yellow);
+	border-bottom: 2px solid var(--brs-light-grey);
 }
 .contact {
 	height:100vh;
 	background-color: var(--brs-dark-blue);
+	display:flex;
+	flex-direction:column;
 }
+
+.contact h3 {
+	margin-top: 2rem;
+	font-size: 4rem;
+	margin-left: 4rem;
+	color:var(--brs-light-grey);
+	border-bottom: 2px solid var(--brs-light-grey);
+}
+

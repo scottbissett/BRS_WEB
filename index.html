@@ -17,6 +17,7 @@
 
 <!--	font awesome style link-->
 <script src="https://kit.fontawesome.com/ae7e365ef9.js" crossorigin="anonymous"></script>
+<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
 </head>
 
 
@@ -154,10 +155,55 @@
 </div>
 
 <div class="where"><h4>Where...</h4>
-	<h5> do we fit in.</h5></div>
+	<h5> do we fit in.</h5>
+
+	<p>We provide services from project inception through to post occupancy in the following sectors:</p>
+	<ul>
+		<li>New build domestic</li>
+		<li>New build commercial</li>
+		<li>Large scale commercial</li>
+		<li>Domestic Retro-fit</li>
+
+	</ul>
+
+</div>
 
 
-<div class ="contact" id="contacting"></div>
+
+<div class ="contact" id="contacting">
+	<h3>Get in touch.</h3>
+	<h1>Contact us</h1>
+	<!-- contact form begins here -->
+<form method="POST" name="contactform" action="contact-form-handler.php"> 
+<p>
+<label for='name'>Your Name:</label> <br>
+<input type="text" name="name">
+</p>
+<p>
+<label for='email'>Email Address:</label> <br>
+<input type="text" name="email"> <br>
+</p>
+<p>
+<label for='message'>Message:</label> <br>
+<textarea name="message"></textarea>
+</p>
+<input type="submit" value="Submit"><br>
+</form>
+
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+<!--
+Sample code from:
+http://www.html-form-guide.com/contact-form/php-email-contact-form.html
+-->
+</div>
 
 </body>
 </html>
