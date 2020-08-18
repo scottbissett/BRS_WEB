@@ -33,11 +33,12 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	color: var(--brs-darkest-grey);
-	width: 100%;
+	width: 100vw;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+	overflow-x: clip; 
+	background-color: var(--brs-light-grey-tbackground);
 	
 }
 
@@ -76,7 +77,7 @@ color: var(--brs-darkest-grey);
 	width:100%;
 	position:absolute;
 	top:0;
-	right:0;
+	right:2.5rem;
 	transform: translate(5rem, 2.5rem);
 	z-index:-1;
 	object-fit: cover;
@@ -99,7 +100,7 @@ color: var(--brs-darkest-grey);
 	right:100;
 	transform: translate(4.9rem, 2.4rem);
 	z-index:-2;
-	background-color: var(--brs-light-grey-tbackground);
+	background-color: var(--brs-light-grey-background);
 	
 }
 
@@ -126,7 +127,7 @@ color: var(--brs-darkest-grey);
 	top:0;
 	bottom:100;
 	z-index:-2;
-	background-color: var(--brs-light-grey-tbackground);
+	background-color: var(--brs-light-grey-background);
 	transform: translate(-5rem, 2rem);
 }
 
@@ -141,6 +142,18 @@ color: var(--brs-darkest-grey);
 	z-index:-1;
 	object-fit: cover;
 	transform:translate(-5rem, 2rem) scale(-1,1);
+	
+}
+
+.crossleftfin {
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+	object-fit: cover;
+	transform:translate(-5rem, -10rem) scale(-1,1);
 	
 }
 
@@ -185,6 +198,7 @@ color: var(--brs-darkest-grey);
 
 /* nav styling start */
 header  {
+	overflow-x:hidden ;
     height:10vh;
 	background-color: rgba(red, green, blue, 0);
 	position: fixed;
@@ -193,6 +207,7 @@ header  {
 	justify-content: space-between;
 	z-index:999;
 }
+
 
 .nav-toggle {
 	display:none;
@@ -322,7 +337,7 @@ nav a:hover {
 	min-height:100vh;
 	background-color: var(--brs-light-grey-background);
 	position:relative;
-	overflow: hidden;
+	overflow-x: hidden;
 	
 }
 
@@ -344,7 +359,7 @@ nav a:hover {
 	z-index: 10;
 	padding-left: 1rem;
 	color: var(--brs-title-grey);
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 1200;
   	-webkit-text-fill-color:var(--brs-light-grey-background); /* Will override color (regardless of order) */
   	-webkit-text-stroke-width: 1.5px;
@@ -394,7 +409,7 @@ nav a:hover {
 .about a:hover {
 	-webkit-text-fill-color: var(--brs-dark-blue);
 	font-style: italic;
-} */
+} 
 
 .what {
 	height:auto;
@@ -601,6 +616,9 @@ nav a:hover {
 
 .getintouch .sectitleright::after {
 	background-color: var(--brs-mid-grey);
+	content: "";
+	height:auto;
+	width:100%;
 }
 
 .getintouch .title-l:first-child {
@@ -688,7 +706,7 @@ nav a:hover {
 	text-align: center;
 }
 
-@media screen and (min-width: 741px) {
+/* @media screen and (min-width: 741px) {
 .hero {
 	
 }
@@ -725,4 +743,4 @@ nav a:hover {
 	}
 
 
-}
+} */
