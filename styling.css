@@ -115,6 +115,7 @@ color: var(--brs-darkest-grey);
 
 .sectiontitleright {
 	position: relative;
+	
 }
 
 .sectitleright::after {
@@ -353,55 +354,26 @@ nav a:hover {
 
 
 
-.about {
-	min-height:auto;
-	background-color: var(--brs-light-grey-background);
-	position:relative;
-	overflow: hidden;
-	z-index: 0;
-	
-	
-}
-
-.bground {
-	background-color: var(--brs-mid-grey);
-	height:auto;
-	width:auto;
-	margin-right:2.5rem;
-	margin-top:4.5rem;
-	display:flex;
-	flex-direction: column;
-	margin-bottom: 2rem;
-
-}
-
-
-.about h2 {
-	font-size: 3.5rem;
-	margin-left:2.5rem;
-	margin-top:2rem;
-}
-
-.about h3 {
-	font-size: 3.5rem;
-	color: var(--brs-mid-grey);
-	padding-right: 12px;
-	text-align: right;
-	-webkit-text-fill-color:var(--brs-mid-grey); /* Will override color (regardless of order) */
-  	-webkit-text-stroke-width: 1.5px;
-	-webkit-text-stroke-color: var(--brs-light-grey-background);
-	margin-left:2.5rem;
-	border-bottom: 1px solid var(--brs-light-grey-background);
-	
+.inlinecontact {
+	text-decoration: none;
+	background: var(--brs-gradient);
+	background-clip:text;   
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	margin-top:2.5rem;
 }
 	
 .aboutimg {
-	width:200px;
+	width:300px;
 	object-fit: cover;
 	align-self: center;
 	transform: translate(10%);
-	height:200px;
+	height:300px;
 	border-radius: 50%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 
@@ -409,7 +381,7 @@ nav a:hover {
 	margin-top:1rem;
 	background-color: var(--brs-light-grey-opacity2);
 	margin-left: 2.5rem;
-	margin-right: 12px;
+	margin-right: 2.5rem;
 	max-width: 400px;
 	color:var(--brs-light-grey-background);
 	z-index: 1;
@@ -417,31 +389,12 @@ nav a:hover {
 	
 }
 
-.about .bground p:last-child {
-	margin-bottom:4rem;
-}
 
-.about .inlinecontact {
-	text-decoration: none;
-	writing-mode: vertical-lr;
-	font-size: 3rem;
-	position:absolute;
-	bottom:0;
-	right:0;
-	z-index: 10000;
-	color: var(--brs-title-grey);
-	font-size: 2.8rem;
-	font-weight: 700;
-  	-webkit-text-fill-color:var(--brs-light-grey-background); /* Will override color (regardless of order) */
-  	-webkit-text-stroke-width: 1.5px;
-	-webkit-text-stroke-color: var(--brs-title-grey); 
-	transform: rotate(180deg);
-}
 
 .about a:hover {
 	-webkit-text-fill-color: var(--brs-dark-blue);
 	font-style: italic;
-}
+} */
 
 .what {
 	height:auto;
@@ -468,7 +421,30 @@ nav a:hover {
 	text-align: justify;
 }
 
+.whos {
+	height:auto;
+	background-color: var(--brs-light-grey-background);
+	position:relative;
+	z-index: -2;
+}
+
+
+
+.whos h3 {
+	border-bottom: 1px solid var(--brs-darkest-grey);
+}
+
+.intro p {
+	margin-top: 4rem;
+	margin-left:2.5rem;
+	margin-right:2.5rem;
+}
+
+.intro h3 {
+	border-bottom: 1px solid var(--brs-darkest-grey)
+}
 .oview {
+	margin-top:2.5rem;
 	height: 300px;
 	width:100%;
 }
@@ -508,14 +484,18 @@ nav a:hover {
 	margin-top: 2rem;
 	width:100%;
 	object-fit: cover;
-	transform: translate(2.5rem)
+	transform: translate(2.5rem);
+	margin-bottom: 5rem;
+	border-left: 8px solid var(--brs-red);
 }
 
 .sectorimageleftalign {
 	margin-top: 2rem;
 	width:100%;
 	object-fit: cover;
-	transform: translate(-2.5rem)
+	transform: translate(-2.5rem);
+	margin-bottom: 5rem;
+	border-right: 8px solid var(--brs-red);
 }
 
 .infocard {
@@ -552,7 +532,10 @@ nav a:hover {
 
 .bphysics {
 	position:relative;
+	
 }
+
+
 
 .bphysics .title-r:first-child {
 	padding-top: 7rem;
@@ -575,7 +558,15 @@ nav a:hover {
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
+.who {
+	position:relative;
+}
 
+
+
+.who h3 {
+	border-bottom: 1px solid var(--brs-darkest-grey);
+}
 .sustainablecommunities {
 	position:relative;
 }
