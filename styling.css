@@ -39,6 +39,7 @@ body {
     padding: 0px;
 	overflow-x: clip; 
 	background-color: var(--brs-light-grey-tbackground);
+	z-index: -2;
 	
 }
 
@@ -338,6 +339,7 @@ nav a:hover {
 	background-color: var(--brs-light-grey-background);
 	position:relative;
 	overflow-x: hidden;
+	z-index: -2;
 	
 }
 
@@ -367,7 +369,15 @@ nav a:hover {
 	border-left: 8px solid var(--brs-title-grey);
 }
 
-
+.herovid {
+	width:125vw;
+	height:auto;
+	position: absolute;
+	bottom:100;
+	left:0%;	
+	z-index: -1;
+	transform: translate(0,4rem);
+}
 
 .inlinecontact {
 	text-decoration: none;
