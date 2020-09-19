@@ -199,7 +199,7 @@ color: var(--brs-darkest-grey);
 
 /* nav styling start */
 header  {
-	overflow-x:hidden ;
+	
     height:10vh;
 	background-color: rgba(red, green, blue, 0);
 	position: fixed;
@@ -299,7 +299,7 @@ nav a {
 }
 
 nav a:hover {
-	color: var(--brs-red);
+	color: var(--brs-yellow);
 	font-style: italic;
 }
 
@@ -389,6 +389,8 @@ nav a:hover {
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
 	margin-top:2.5rem;
+	cursor: pointer;
+	z-index: 999;
 }
 	
 .aboutimg {
@@ -536,8 +538,11 @@ nav a:hover {
 	font-size: 0.7rem;
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
-	color: var(--brs-mid-grey)
+	color: var(--brs-mid-grey);
+	
 }
+
+
 .infocard p {
 	margin-top: 0.9rem;
 	margin-bottom: 0.9rem;
@@ -649,7 +654,8 @@ nav a:hover {
 
 .infocardlast {
 	position:relative;
-	padding-top: 2.5rem;
+	margin-top: 2.5rem;
+	padding-top: 1rem;
 	padding-bottom:1rem;
 	background-color: var(--brs-darkest-grey);
 	z-index: -10;
@@ -657,12 +663,12 @@ nav a:hover {
 }
 
 .infocardlast h4 {
-	border-top: 1px solid var(--brs-light-grey-background);
-	text-transform: uppercase;
-	font-size: 0.7rem;
+	font-size: 1rem;
+	padding-top: 4.5rem;
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
-	color: var(--brs-mid-grey)
+	Margin-bottom: 5rem;
+	color: var(--brs-light-grey-background);
 }
 .fbody {
 	margin-top: 0.9rem;
@@ -691,7 +697,7 @@ nav a:hover {
 	list-style: none;
 	display: flex;
 	justify-content: center;
-	
+	margin-top: 2rem;
 }
 
 .infocardlast a {
@@ -708,7 +714,7 @@ nav a:hover {
 	margin-right: 2.5rem;
 	max-width: 400px;
 	font-size: 0.7rem;
-	color:var(--brs-mid-grey);
+	color:var(--brs-light-grey-background);
 	z-index: 1;
 	font-family: proxima-nova, sans-serif;
 	font-weight: 400;
