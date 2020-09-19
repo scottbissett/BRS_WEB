@@ -38,10 +38,12 @@ body {
     margin: 0px;
     padding: 0px;
 	overflow-x: clip; 
-	background-color: var(--brs-light-grey-tbackground);
-	z-index: -2;
+	background-color: var(--brs-light-grey-background);
+	z-index: 0;
 	
 }
+
+
 
 .bcopy {
 
@@ -59,19 +61,7 @@ color: var(--brs-darkest-grey);
 	line-height: 60px;
 }
 
-.title-r {
-	font-size: 3rem;
-	color: var(--brs-darkest-grey);
-	text-align: right;
-	margin-right: 2.5rem;
-	border-left: 8px solid var(--brs-darkest-grey);
-	margin-left: 2rem;
-	z-index:100;
-}
 
-.sectitleleft {
-	position: relative;
-}
 
 .crossright {
 	height:100%;
@@ -80,8 +70,20 @@ color: var(--brs-darkest-grey);
 	top:0;
 	right:2.5rem;
 	transform: translate(5rem, 2.5rem);
-	z-index:-1;
+	z-index:1;
 	object-fit: cover;
+}
+
+.crossleft {
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	object-fit: cover;
+	transform:translate(-3rem, 2rem) scale(-1,1);
+	
 }
 
 .title-r:first-child {
@@ -92,18 +94,19 @@ color: var(--brs-darkest-grey);
 	padding-top: 2.5rem;
 }
 
-.sectitleleft::after {
-	content: "";
-	height:100%;
-	width:100%;
-	position:absolute;
-	top:0;
-	right:100;
-	transform: translate(4.9rem, 2.4rem);
-	z-index:-2;
-	background-color: var(--brs-light-grey-background);
-	
+
+
+.title-r {
+	font-size: 3rem;
+	color: var(--brs-darkest-grey);
+	text-align: right;
+	margin-right: 2.5rem;
+	border-left: 8px solid var(--brs-darkest-grey);
+	margin-left: 2rem;
+	/* background-color: var(--brs-light-grey-tbackground); */
+	z-index:2;
 }
+
 
 .title-l {
 	font-size: 3rem;
@@ -112,11 +115,33 @@ color: var(--brs-darkest-grey);
 	margin-left: 2.5rem;
 	border-right: 8px solid var(--brs-darkest-grey);
 	margin-right: 2rem;
-	z-index:100;
+	/* background-color: var(--brs-light-grey-tbackground); */
+	z-index:2;
+}
+
+.sectitleleft {
+	position: relative;
+	background-color: var(--brs-light-grey-background);
+	z-index:2;
+}
+
+.sectitleleft::after {
+	content: "";
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	right:100;
+	transform: translate(4.9rem, 2.4rem);
+	z-index:-1;
+	background-color: var(--brs-light-grey-tbackground);
+	
 }
 
 .sectiontitleright {
 	position: relative;
+	background-color: var(--brs-light-grey-background);
+	z-index:2;
 	
 }
 
@@ -127,24 +152,14 @@ color: var(--brs-darkest-grey);
 	position:absolute;
 	top:0;
 	bottom:100;
-	z-index:-2;
-	background-color: var(--brs-light-grey-background);
+	z-index:-1;
+	background-color: var(--brs-light-grey-tbackground);
 	transform: translate(-5rem, 2rem);
 }
 
 
 
-.crossleft {
-	height:100%;
-	width:100%;
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:-1;
-	object-fit: cover;
-	transform:translate(-5rem, 2rem) scale(-1,1);
-	
-}
+
 
 .crossleftfin {
 	height:100%;
@@ -152,7 +167,7 @@ color: var(--brs-darkest-grey);
 	position:absolute;
 	top:0;
 	left:0;
-	z-index:-1;
+	/* z-index:-1; */
 	object-fit: cover;
 	transform:translate(-5rem, -10rem) scale(-1,1);
 	
@@ -160,7 +175,7 @@ color: var(--brs-darkest-grey);
 
 .slogo {
 	height:75%;
-	z-index: -1;
+	z-index: 1;
 	position:absolute;
 	top:2.5rem;
 	right:5.5rem;
@@ -173,13 +188,13 @@ color: var(--brs-darkest-grey);
 	position:absolute;
 	top:0;
 	opacity:0.25;
-	z-index: -1;
+	z-index: 1;
 	margin-left: 2.5rem;
 }
 
 .slogoleft {
 	height:75%;
-	z-index: -1;
+	z-index: 1;
 	position:absolute;
 	top:2.5rem;
 	left:5.5rem;
@@ -192,7 +207,7 @@ color: var(--brs-darkest-grey);
 	position:absolute;
 	top:0;
 	opacity:0.25;
-	z-index: -1;
+	/* z-index: -1; */
 	right:0;
 	margin-right: 2.5rem;
 }
@@ -206,7 +221,7 @@ header  {
 	width:100%;
 	display:flex;
 	justify-content: space-between;
-	z-index:999;
+	z-index: 800;
 }
 
 
@@ -339,7 +354,7 @@ nav a:hover {
 	background-color: var(--brs-light-grey-background);
 	position:relative;
 	overflow-x: hidden;
-	z-index: -2;
+	/* z-index: -2; */
 	
 }
 
@@ -348,7 +363,7 @@ nav a:hover {
 	font-size: 3.8rem;
 	margin-top:15vh;
 	margin-left:2rem;
-	z-index: 10;
+	/* z-index: 10; */
 	padding-left: 1rem;
 	font-weight: 700;
 	border-left: 8px solid var(--brs-title-grey);
@@ -358,7 +373,7 @@ nav a:hover {
 
 .hero h2 {
 	margin-left:2rem;
-	z-index: 10;
+	/* z-index: 10; */
 	padding-left: 1rem;
 	color: var(--brs-title-grey);
 	font-size: 1.8rem;
@@ -376,7 +391,7 @@ nav a:hover {
 	position: absolute;
 	bottom:100;
 	left:0%;	
-	z-index: -1;
+	/* z-index: -1; */
 	transform: translate(0,4rem);
 }
 
@@ -390,9 +405,9 @@ nav a:hover {
 	margin-right: 2.5rem;
 	margin-top:2.5rem;
 	cursor: pointer;
-	z-index: 999;
+	/* z-index: 999; */
 }
-	
+
 .aboutimg {
 	width:300px;
 	object-fit: cover;
@@ -412,7 +427,7 @@ nav a:hover {
 	margin-right: 2.5rem;
 	max-width: 400px;
 	color:var(--brs-light-grey-background);
-	z-index: 1;
+	/* z-index: 1; */
 	text-align: justify;
 	
 }
@@ -429,7 +444,7 @@ nav a:hover {
 	background-color: var(--brs-light-grey-background);
 	position:relative;
 	overflow: hidden;
-	z-index: -2;
+	/* z-index: -2; */
 }
 
 .what h3 {
@@ -444,16 +459,16 @@ nav a:hover {
 	margin-right: 2.5rem;
 	max-width: 400px;
 	color:var(--brs-darkest-grey);
-	z-index: 1;
+	/* z-index: 1; */
 	padding: 2px;
 	text-align: justify;
 }
 
 .whos {
 	height:auto;
-	background-color: var(--brs-light-grey-background);
+	background-color: var(--brs-light-grey-backgroundt);
 	position:relative;
-	z-index: -2;
+	/* z-index: -2; */
 }
 
 
@@ -469,7 +484,8 @@ nav a:hover {
 }
 
 .intro h3 {
-	border-bottom: 1px solid var(--brs-darkest-grey)
+	border-bottom: 1px solid var(--brs-darkest-grey);
+	z-index: 3;
 }
 .oview {
 	margin-top:2.5rem;
@@ -479,6 +495,7 @@ nav a:hover {
 
 .intro {
 	position:relative;
+	
 }
 
 .lastp {
@@ -486,7 +503,7 @@ nav a:hover {
 	margin-right: 2.5rem;
 	margin-top:0.5rem;
 	font-size: 1.2rem;
-	z-index: 1;
+	/* z-index: 1; */
 	background: var(--brs-gradient);
 	background-clip:text;   
 	-webkit-background-clip: text;
@@ -500,9 +517,8 @@ nav a:hover {
 
 .energyergo {
 	height:auto;
-	background-color: var(--brs-light-grey-background);
 	position:relative;
-	z-index: -2;
+	/* z-index: -2; */
 }
 
 .energyergo .title-l:first-child {
@@ -551,7 +567,7 @@ nav a:hover {
 	max-width: 400px;
 	font-size: 0.9rem;
 	color:var(--brs-darkest-grey);
-	z-index: 1;
+	/* z-index: 1; */
 	font-family: proxima-nova, sans-serif;
 	font-weight: 700;
 	font-style: italic;
@@ -559,6 +575,7 @@ nav a:hover {
 
 .energyergo h2 {
 	border-bottom: 1px solid var(--brs-darkest-grey);
+	z-index: 3;
 }
 
 .bphysics {
@@ -574,6 +591,7 @@ nav a:hover {
 }
 .bphysics h2 {
 	border-bottom: 1px solid var(--brs-darkest-grey);
+	z-index: 3;
 }
 
 .lastpr {
@@ -583,9 +601,9 @@ nav a:hover {
 	margin-top:0.5rem;
 	font-size: 1.2rem;
 	font-weight: 400;
-	z-index: 1;
+	/* z-index: 1; */
 	background: var(--brs-gradient);
-	background-clip:text;   
+	background-clip: text;   
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
@@ -626,7 +644,7 @@ nav a:hover {
 .getintouch {
 	position:relative;
 	background-color: var(--brs-darkest-grey);
-	z-index: -10;
+	/* z-index: -10; */
 	height:auto;
 }
 
@@ -658,17 +676,18 @@ nav a:hover {
 	padding-top: 1rem;
 	padding-bottom:1rem;
 	background-color: var(--brs-darkest-grey);
-	z-index: -10;
+	z-index: 2;
 	height:auto;
 }
 
 .infocardlast h4 {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	padding-top: 4.5rem;
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
 	Margin-bottom: 5rem;
 	color: var(--brs-light-grey-background);
+	font-weight: 400;
 }
 .fbody {
 	margin-top: 0.9rem;
@@ -677,7 +696,7 @@ nav a:hover {
 	max-width: 400px;
 	font-size: 0.9rem;
 	color:var(--brs-light-grey-background);
-	z-index: 1;
+	/* z-index: 1; */
 	font-family: proxima-nova, sans-serif;
 	font-weight: 700;
 	font-style: italic;
@@ -687,25 +706,31 @@ nav a:hover {
 .flogo {
 	margin-top: 2.5rem;
 	width:auto;
-	z-index: -1;
+	/* z-index: -1; */
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
 }
 
-.infocardlast ul {
+
+.endsection ul {
 	color: var(--brs-mid-grey);
 	list-style: none;
 	display: flex;
 	justify-content: center;
 	margin-top: 2rem;
+	cursor: pointer;
+	position:relative;
+	z-index:999;
 }
 
-.infocardlast a {
+.endsection a {
 	text-decoration: none;
 	padding: 5px;
 	color: var(--brs-mid-grey);
+	cursor: pointer;
+	position:relative;
+	z-index:999;
 }
-
 
 
 .smallprint {
@@ -714,7 +739,7 @@ nav a:hover {
 	margin-right: 2.5rem;
 	max-width: 400px;
 	font-size: 0.7rem;
-	color:var(--brs-light-grey-background);
+	color:var(--brs-light-grey-tbackground);
 	z-index: 1;
 	font-family: proxima-nova, sans-serif;
 	font-weight: 400;
@@ -723,6 +748,15 @@ nav a:hover {
 	text-align: center;
 }
 
+.contactpar {
+	color: var(--brs-light-grey-background);
+	z-index:10;
+}
+
+.contactpar a {
+	text-decoration: none;
+	color: var(--brs-yellow);
+}
 /* @media screen and (min-width: 741px) {
 .hero {
 	
