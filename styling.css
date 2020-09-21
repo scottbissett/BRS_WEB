@@ -386,7 +386,8 @@ nav a:hover {
 
 .herovid {
 	
-	width:125vw;
+	min-width:75vw;
+	max-width:400px;
 	height:auto;
 	position: absolute;
 	bottom:100;
@@ -744,7 +745,7 @@ nav a:hover {
 	font-family: proxima-nova, sans-serif;
 	font-weight: 400;
 	font-style: italic;
-	margin-bottom:2.5rem;
+	
 	text-align: center;
 }
 
@@ -757,41 +758,191 @@ nav a:hover {
 	text-decoration: none;
 	color: var(--brs-yellow);
 }
-/* @media screen and (min-width: 741px) {
-.hero {
-	
-}
-.about {
-	
-}
-.what {
-	
-}
-.where {
-	
-}
-.contact {
-	
+
+
+/* Non visible desktop html element styling here */
+
+#desktopwhattitle {
+	display:none;
 }
 
+#whatdecogrid {
+	display:none;
 }
+
+/* non visible desktop elements end */
+
+
+
+/* Breakpoint for desktop version */
+
 
 @media screen and (min-width: 1024px) {
+	
+	/* Hero Section Styling Starts Here */
 	.hero {
+	display:grid;
+	height:100vh;
+	grid-template-columns:  0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
+	grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
+	grid-gap: 5px;
+	}
+
+
+	.hero h1 {
+	all:unset;
+	grid-area: 2/1/3/4;
+	font-size: 2.8rem;
+	margin-left:2rem;
+	font-weight: 700;
+	justify-self:end;
+	align-self: flex-end;
+	
+	}
+	.hero h2 {
+		all:unset;
+		grid-area: 6/4/7/7;
+		font-size:2.6rem;
+		margin-left:2rem;
+		color: var(--brs-title-grey);
+		font-weight: 1200;
+  		-webkit-text-fill-color:var(--brs-light-grey-background); /* Will override color (regardless of order) */
+  		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-stroke-color: var(--brs-title-grey);
+		align-self: center;
+	}
+
+	.heroline {
+		grid-area:3/4/8/5;
+		border-left:5px solid var(--brs-title-grey);
+	}
+
+	.herovid {
+	all:unset;
+	grid-area: 4/1/8/4;
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	}
+
+	/* Hero Section Syling Ends Here */
+	/* What Section Styling Starts Here */
+
+	.what {
+		display:grid;
+		height:100vh;
+		grid-template-columns:  0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
+		grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
+		grid-gap: 5px;
+	}
+
+	.whos {
+		display:none;
+	}
+
+	#desktopwhattitle {
+		all:unset;
+		grid-area: 3/2/4/4;
+		align-self: flex-end;
+		font-size: 2.6rem;
+		font-family: forma-djr-display, sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		color: var(--brs-darkest-grey);
+	}
+	
+	#whatdecogrid {
+		all:unset;
+		height:100%;
+		max-width: 100%;
+		object-fit: cover;
+		grid-area: 2/2/4/4;
+		transform:scale(-1,1);
+		 
+	}	
+
+	#whatvertical1 {
+	grid-area:1/4/4/5;
+	border-left:5px solid var(--brs-title-grey);
+	}
+
+	#whatvertical2 {
+		grid-area: 7/-5/8/-4;
+		border-right:5px solid var(--brs-title-grey);
+	}
+	#whathorizontal1 {
+		grid-area:3/2/4/4;
+		border-bottom:1px solid var(--brs-darkest-grey)
+	}
+
+	#firstintro {
+		all:unset;
+		grid-area:4/2/5/4;
+		align-self: flex-end;
+		font-size:0.8rem;
+		font-weight: 500;
+		max-width: 400px;
+	}
+
+	.dropcap {
+	all:unset;
+	font-size: 2rem;
+	color: var(--brs-red);
+	}
+
+	#secondintro {
+		all:unset;
+		grid-area:5/2/6/4;
+		align-self: flex-start;
+		margin-top:0.3rem;
+		font-size:0.8rem;
+		font-weight: 500;
+		max-width:400px;
+	}
+
+	#inlinecon {
+		all:unset;
+		grid-area:7/5/8/7;
+		background: var(--brs-gradient);
+		background-clip:text;   
+		-webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		text-transform: uppercase;
+		font-weight: 900;
+		align-self: flex-start;
+	}
+	
+	#rviz {
+		max-width:90%;
+		height:90%;
+		align-self: center;
+		justify-self: center;
+		grid-area: 2/4/7/8;
+		border-radius: 25%;
+		
+	}
+
+	.inlinecontact {
 		all:unset;
 	}
-	.about {
-		display:none;
-	}
-	.what {
-		display:none;
-	}
-	.where {
-		display:none;
-	}
-	.contact {
+
+	.aboutimg {
 		display:none;
 	}
 
 
-} */
+	.intro {
+		display:none;
+	}
+
+	.servicesscreendesktop {
+		display:none;
+	}
+
+	.contactscreendesktop {
+		display:none;
+	}
+
+	
+
+}
