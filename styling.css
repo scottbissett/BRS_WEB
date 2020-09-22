@@ -770,6 +770,10 @@ nav a:hover {
 	display:none;
 }
 
+#rviz {
+	display:none;
+}
+
 /* non visible desktop elements end */
 
 
@@ -913,6 +917,7 @@ nav a:hover {
 	}
 	
 	#rviz {
+		all:unset;
 		max-width:90%;
 		height:90%;
 		align-self: center;
