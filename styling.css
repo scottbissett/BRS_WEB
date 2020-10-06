@@ -37,7 +37,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-	overflow-x: clip; 
+	overflow-x: hidden; 
 	background-color: var(--brs-light-grey-background);
 	z-index: 0;
 	
@@ -56,9 +56,9 @@ color: var(--brs-darkest-grey);
 
 .dropcap {
 	color: var(--brs-red);
-	font-size: 5.4rem;
-	float:left;
-	line-height: 60px;
+	font-size: 0.9rem;
+	display:inline;
+	line-height: auto;
 }
 
 
@@ -332,7 +332,7 @@ nav a:hover {
 	position:absolute;
 	top:5%;
 	right:0;
-	margin-right: 2.5rem;
+	margin-right: 6rem;
 	height:100%;
 	display:flex;
 	align-items: center;
