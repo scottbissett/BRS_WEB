@@ -933,7 +933,7 @@ height:100vh;
 /* GLOBAL DESKTOP STYLING STARTS HERE */
 #whoweare {
 	display: grid;
-	height:100vh;
+	max-height:100vh;
 	grid-template-columns:  0.333fr 0.333fr 0.333fr 1fr 1fr ;
 	grid-template-rows: 1fr 1fr 1fr;
 	padding-top: 0;
