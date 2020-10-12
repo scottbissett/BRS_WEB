@@ -9,6 +9,7 @@
 	<!-- Linked Style Sheet -->
 	
 <link rel="stylesheet" href="styling.css">
+<link rel="stylesheet" href="scrolls.css">
 
 
 	<!-- Linked font -->	
@@ -25,483 +26,227 @@
 
 
 <body>
-<header>
+	<header>
+		<input type="checkbox" id="nav-toggle" class ="nav-toggle">
+		<nav>
 	
-	<input type="checkbox" id="nav-toggle" class ="nav-toggle">
-<nav>
-	
-	<ul>
-		<li><a href="#heroid">Home</a></li>
-		<li><a href="#aboutid">About</a></li>
-		<li><a href="#servicesid">Services</a></li>
-		<li><a href="#getintouchid">Contact</a></li>
+			<ul>
+				<li><a href="#herosection">Home</a></li>
+				<li><a href="#whoweare">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
 		
-	</ul>
-</nav>
+			</ul>
+		</nav>
 
-<label for="nav-toggle" class="nav-toggle-label">
-	<span></span>
-</label>
+		<label for="nav-toggle" class="nav-toggle-label">
+			<span></span>
+		</label>
 
-<h3 class ="logotext">BRS</h3>
+		<h3>BRS</h3>
 
-</header>
+	</header>
 
+	<div id="herosection" class ="page">
+		<h1 class="primarytitle show-on-scroll">Building Research Solutions.</h1>
+		<h2 class="outlinetitle show-on-scroll">Your R&D Department.</h2>
+		<video id="herovid" autoplay loop muted>
+			<source src="HeroAnim.mp4" type="video/mp4">
+			 Your browser does not support the video tag.
+		</video>
+	</div>
 
-<div class = "hero" id="heroid">
+	<div id="whoweare" class ="page">
 
-	<h1 class = "title">Building Research Solutions.</h1>
-	
-	<h2>Your R&D department.</h2>
-	
-	<video class="herovid" autoplay loop muted>
-		<source src="HeroAnim (2).mp4" type="video/mp4">
+		 
+			<img src="redvisual.png" alt="Construction isometric" id="redviz"  class = "desktopviz">
 		
-	     Your browser does not support the video tag.
-	  </video>
 
-	  <div class ="heroline"></div>
-	
-
-</div>
-
-
-
-<div class ="what" id ="aboutid">
-	
-	<h1 id="desktopwhattitle">Who we are.</h1>
-	
-	<object type="image/svg+xml" data="crosses_right_text.svg" class = "crossleft" id ="whatdecogrid">
-	Your browser does not support SVG
-	</object>
-
-	<img src="redvisual.png" alt="Construction Detail ISO" id ="rviz">
-
-	<div id ="whatvertical1"></div>
-	<div id ="whatvertical2"></div>
-	<div id ="whathorizontal1"></div>
-
-	<div class = "whos">
-		<div class ="sectitleright" id="whattitle">
-			<h1 class ="title-l" >Who</h1>
-			<h2 class ="title-l" >we</h2>
-			<h3 class ="title-l" >are.</h3>
-			<object type="image/svg+xml" data="crosses_right_text.svg" class = "crossleft">
-				Your browser does not support SVG
-			</object>
-			
+		<h1 id="whotitle" class="primarytitle show-on-scroll">Who we are.</h1>
+		<p id="whop1" class="body-copy"><span class="emp">O</span>ur team at Building Research Solutions is a collective of construction professionals; with a background in academia, we now provide scientific-rich solutions for the whole construction sector throughout every life cycle stage.</p>
+		<p id="whop2" class="body-copy">We offer discernible, pre-eminent knowledge in sustainability to advance the construction sector, working with the industry to reach its goals. Linked to the Scottish education sector, we bring cutting edge, scientific knowledge from the innovative labs of academia to industry and businesses.</p>
+		
+		<div id="whoimagemobile" class="image-container-left show-on-scroll">
+			<img src="about.jpg" alt="House under contruction." class = "blockimage-left">
 		</div>
-	</div>	
-	<p id ="firstintro" class ="bcopy"><span class="dropcap">O</span>ur team at Building Research Solutions is a collective of construction professionals; with a background in academia, we now provide scientific-rich solutions for the whole construction sector throughout every life cycle stage.</p>
-
-	<img src="about.jpg" alt="House under contruction." class = "aboutimg">
-
-	<p id ="secondintro" class ="bcopy">We offer discernible, pre-eminent knowledge in sustainability to advance the construction sector, working with the industry to reach its goals. Linked to the Scottish education sector, we bring cutting edge, scientific knowledge from the innovative labs of academia to industry and businesses.</p>
-
-
-	
-	<p id="inlinecon">
-		<a href="#getintouchid"  class ="inlinecontact">Click here to get in touch directly.</a>
-	</p>
-	
-	<img src="Jon.jpg" alt="Dr Jon Stinson" class = "bioimage" id="jonimage">
-
-	<p class="bcopy biotext" id="jontext"><span class="dropcap">Dr Jon Stinson</span> – Leading Architectural Technology and Energy projects. Likes to look longingly into the distance.</p>
-	
-	<img src="Ruth.jpg" alt="Dr Ruth Saint" class = "bioimage" id="ruthimage">
-
-	<p class="bcopy biotext" id="ruthtext"><span class="dropcap">Dr Ruth Saint</span>  - Leading Life Cycle Assessment and Sustainability projects. A problem solver, not a problem maker.</p>
-
-	<img src="Lennox.jpg" alt="Lennox, HNC" class = "bioimage" id="lennoximage">
-	<p class="bcopy biotext" id="lennoxtext"> <span class="dropcap">Lennox, HNC</span> – GDPR officer, diligently guards the printer and controls handover of important documents.</p>
-
-</div>
-	
-	<div class = "intro">
-
-		<h1 id ="desktopwhostitle"> What we Provide.</h1>
-		<object type="image/svg+xml" data="crosses_right_text.svg" class = "crossleft" id ="whodecogrid">
-			Your browser does not support SVG
-		</object>
-
-		<div id="whovertical1"></div>
-		<div id="whohorizontal1"></div>
-		<div id="whovertical2"></div>
-
-		<img src="yellowvisual.png" alt="Construction Detail ISO" id ="yviz">
-
-		<div class ="sectitleleft" id = "whostitle">
-			<h1 class ="title-r" id= "introtitle1">What</h1>
-			<h2 class ="title-r" id= "introtitle2">we</h2>
-			<h3 class ="title-r" id= "introtitle3">provide.</h3>
-
-			<object type="image/svg+xml" data="crosses_right_text.svg" class = "crossright">
-				Your browser does not support SVG
-			</object>
+		<div id="jonimg" class="image-container-right show-on-scroll">
+		<img src="Jon.jpg" alt="Dr Jon Stinson" class = "blockimage-right">
 		</div>
-	
-		
-		<p class ="bcopy" id ="firstwhat"><span class="dropcap">B</span>uilding Research Solutions provides an on-demand research and development department that offers bespoke science-oriented building solutions through our combined expertise.
-		Our services can be employed at any stage of the construction life cycle to prov‘actionable intel’; capturing the data needed to make informed, actionable decisions.
-		</p>
-
-		
-		<object type="image/svg+xml" data="overview.svg" class = "oview" id ="overviewdiagram">
-			Your browser does not support SVG
-		</object>
-
-		<p class ="bcopy" id ="secondwhat">We specialise in delivering decision support tools, capturing, analysing, synthesising and interpreting data to allow clients to achieve their objectives.
-		Building Research Solutions is built around four themes - <span class="dropcap">'Energy ergonomics'</span>, <span class="dropcap">‘Building physics’</span>, <span class="dropcap">‘Asset surveying’</span>, and <span class="dropcap">‘Sustainable Communities’</span> and they complement each other to provide a holistic service for your project.</p>
-
-		
-		<p class = "lastp" id ="inlineprompt">Scroll down to see more about our areas of expertise.</p>
+		<p id="jonp" class="body-copy"><span class="emp">Dr Jon Stinson</span> – Leading Architectural Technology and Energy projects. Likes to look longingly into the distance.</p>
+		<div id="ruthimg" class="image-container-left show-on-scroll">
+		<img src="Ruth.jpg" alt="Dr Ruth Saint" class = "blockimage-left">
+		</div>
+		<p id="ruthp" class="body-copy"><span class="emp">Dr Ruth Saint</span>  - Leading Life Cycle Assessment and Sustainability projects. A problem solver, not a problem maker.</p>
+		<div id="lennoximg" class="image-container-right show-on-scroll">
+		<img src="Lennox.jpg" alt="Lennox, HNC" class = "blockimage-right">
+		</div>
+		<p id="lennoxp" class="body-copy"> <span class="emp">Lennox, HNC</span> – GDPR officer, diligently guards the printer and controls handover of important documents.</p>
+		<h2 id="whoh2" class="outlinetitle show-on-scroll">
+			<a href="mailto:info@brs.scot" target="_blank" rel="noopener">Click here to get in touch directly. </a>
+		</h2>
 
 	</div>
-	
-	<div class = "servicesscreendesktop">
+	<div id="whatweprovide" class ="page">
 
-		<div id="servicesv1"></div>
-		<div id="servicesv2"></div>
-		<div id="servicesv3"></div>
-		<div id="servicesv4"></div>
-		<div id="servicesv5"></div>
+		<img src="yellowvisual.png" alt="Construction isometric" id="yellowviz"  class = "desktopviz">
 
-		<div id="serviceshs1"></div>
-		<div id="serviceshs2"></div>
-		<div id="serviceshs3"></div>
-		<div id="serviceshs4"></div>
 
-		<div id="serviceshl1"></div>
-		<div id="serviceshl2"></div>
-		<div id="serviceshl3"></div>
-		<div id="serviceshl4"></div>
+		<h1 class="primarytitle show-on-scroll">What we provide.</h1>
+		
+		<p id="whatp1" class="body-copy"><span class="emp">B</span>uilding Research Solutions provides an on-demand research and development department that offers bespoke science-oriented building solutions through our combined expertise.Our services can be employed at any stage of the construction life cycle to prov‘actionable intel’; capturing the data needed to make informed, actionable decisions.</p>
 
-		<h1 id="desktopenenergytitle"> Energy Ergonomics.</h1>
-		<h2 id="desktopcommunitytitle"> Sustainable Communities.</h2>
-		<h3 id="desktopsurveyingtitle"> Asset Surveying.</h3>
-		<h4 id="desktopphysicstitle"> Building Physics.</h4>
-
-		<p class="bcopyitalics" id="sustainableitalics"> Working with your stakeholders to validate your decision, through the lens of <span class="dropcapitalics">human factors</span> . Providing you with actionable intel for the people that live in (or near) your buildings. </p>
-
-		<p class="bcopyitalics" id="assetitalics"> Applying our state-of-the-art <span class="dropcapitalics">surveying technology</span>  to capture information about your building(s) and/or area to be developed. Capturing and developing Photogrammetry and LIDAR scans into an as-built real-world digital model, to inform the creation of a digital twins, and provide accurate models for sizing. </p>
-
-		<h5 class= "lastpr" id="asurvtag"> Realising value.</h5>
-		<h5 class= "lastp" id= "scomtag">Bringing people together.</h5>
-
-		<object type="image/svg+xml" data="energyergored.svg" id ="energyergologo">
+		<object type="image/svg+xml" data="overview.svg" style="margin-bottom: 2.5rem; max-width: 400px; position: relative;left:50%;transform: translateX(-50%);" id ="whatsvg">
 			Your browser does not support SVG
 		</object>
 
-		<object type="image/svg+xml" data="bphys.svg" id ="buildingphysicsdesktoplogo" >
-			Your browser does not support SVG
-		</object>		
+		<p id="whatp2" class="body-copy">We specialise in delivering decision support tools, capturing, 			analysing, synthesising and interpreting data to allow clients to achieve their 			objectives.
+			Building Research Solutions is built around four themes - <span class="emp">'Energy ergonomics'</span>, <span class="emp">‘Building physics’</span>, <span class="emp">‘Asset surveying’</span>, and <span class="emp">‘Sustainable Communities’</span> and they complement each other to provide a holistic service for your project.
+		</p>
+		<h2 id="whath2"  class="outlinetitle show-on-scroll">
+			Scroll down to see more about our areas of expertise.
+		</h2>
 
-		<object type="image/svg+xml" data="scomm.svg" id ="scommlogodesktop">
-			Your browser does not support SVG
-		</object>
 
-		<object type="image/svg+xml" data="aset.svg" id ="surveyingdesktoplogo">
-			Your browser does not support SVG
-		</object>
+		
 
-		<div class ="infocard" id="comminfocard">
-			<h4>Building Sectors:</h1>
-			<p>
-				Community groups |
+	</div>
+	<div id="services" class ="page">
+
+		<div id="energy-ergonomics">
+			<h1 class="primarytitle show-on-scroll">Energy Ergonomics.</h1>
+			<object type="image/svg+xml" data="energyergored.svg" id ="energyergologo" class ="show-on-scroll">
+			Your browser does not support SVG
+			</object>
+			<h3 class="tagline show-on-scroll" id="energy-ergonomics-tag">Energy and carbon consultation. </h3>
+			<p id = "energyp"class="body-copy">Seamlessly working sustainability and energy efficiency into the <span class="emp">design stage</span> of your building’s life cycle. Computational modelling of your building(s) to simulate energy, carbon and cost parameters, delivering multiple scenarios to inform your decision making.
+			</p>
+			<h4 id = "energyb" class = "info-card-title">Building Sectors:</h4>
+			<p id = "energybp" class="info-card-copy">Architectural designers | Clients of design projects | House builders | Asset Managers | Real Estate Surveyors</p>
+			<h4 id = "energyr" class = "info-card-title">Research Workflow:</h4>
+			<p id = "energyrp" class="info-card-copy">At Design Stage | Concept Design | Earlier the Better </p>
+			<h4 id = "energys" class = "info-card-title">Solutions:</h4>
+			<p id = "energysp" class="info-card-copy">Alignment with Scottish Building Standards Section 7 | Building Performance Evaluation   |   Design stage low energy validation | Life Cycle Assessment | Life Cycle Inventory   |   Domestic and Non-Domestic   |   Desktop study | Digital twin</p>
+
+			<div id="energyimg" class="image-container-left show-on-scroll">
+				<img src="energy_ergo.jpg" alt="Solar PV Array." class = "blockimage-left-sector">
+				</div>
+
+		</div>
+		<div id="building-physics">
+			<h1 class="primarytitle show-on-scroll">Building Physics.</h1>
+			<object type="image/svg+xml" data="bphys.svg" id ="buildingphysicslogo" class ="show-on-scroll">
+			Your browser does not support SVG
+			</object>
+			<h3 class="tagline show-on-scroll" id="building-physics-tag">Ensuring optimal performance. </h3>
+			<p id="physp" class="body-copy">Applying the fundamentals of physics to your project. Using scientific apparatus to provide you with insights into the workings of your building(s). Capturing, analysing and interpreting in-situ measured data, delivering intel on life cycle assessment and energy performance of <span class="emp">new build</span> and <span class="emp">retrofit</span>  (post-war, historic/traditional, recent, deep and lite-touch) construction.
+			</p>
+			<h4 id="physb" class = "info-card-title">Building Sectors:</h4>
+			<p id="physbp" class="info-card-copy">Facility Managers | Local Authorities | Registered Social Landlord | Private Consultants | SMEs and System Developers | House Buildings | Asset Managers </p>
+			<h4 id="physr" class = "info-card-title">Research Workflow:</h4>
+			<p id="physrp" class="info-card-copy">During & post construction| Pre and post occupation | Life cycle monitoring any age of building
+			</p>
+			<h4 id="physs" class = "info-card-title">Solutions:</h4>
+			<p id="physsp" class="info-card-copy">Pre-occupation evaluation | Build Quality Spot Checking | Partners Energy Ergonomics Through Digital Twin | Provide Remedial Strategies | U-Value Testing | Air Tightness Testing | Energy Monitoring | quality control spot checks during construction phase.</p>
+
+			<div id="physimg" class="image-container-right show-on-scroll">
+				<img src="build_phys.jpg" alt="Solar PV Array." class = "blockimage-right-sector">
+			</div>
+
+		</div>
+		<div id="sustainable-communities">
+			<h1 class="primarytitle show-on-scroll">Sustainable Communities.</h1>
+			<object type="image/svg+xml" data="scomm.svg" id ="sustcomslogo" class ="show-on-scroll">
+			Your browser does not support SVG
+			</object>
+			<h3 class="tagline show-on-scroll" id="sustainable-communities-tag">Bringing people together. </h3>
+			<p id="sustp" class="body-copy">Working with your stakeholders to validate your decision, through the lens of <span class="emp">human factors</span> . Providing you with actionable intel for the people that live in (or near) your buildings. 
+			</p>
+			<h4 id="sustb" class = "info-card-title">Building Sectors:</h4>
+			<p id="sustbp" class="info-card-copy">Community groups |
 				Not for Profit Organisations |
 				Housing Associations |
-				Local Authorities
+				Local Authorities</p>
+			<h4 id="sustr" class = "info-card-title">Research Workflow:</h4>
+			<p id="sustrp" class="info-card-copy">Goal and Scope | Strategic Planning | KPI setting | Project Preparation </p>
+			<h4 id="susts" class = "info-card-title">Solutions:</h4>
+			<p id="sustsp" class="info-card-copy">Focus Groups | Questionnaires | Opinion Polls | Satisfaction Surveys | Building User Surveys (BUS) | Occupant Thermal Comfort</p>
 
-			</p>
-			<h4>Research workflow:</h1>
-			<p>
-				Goal and Scope | Strategic Planning | KPI setting | Project Preparation
+			<div id="sustimg" class="image-container-left show-on-scroll">
+				<img  src="sust_coms.jpg" alt="Solar PV Array." class = "blockimage-left-sector">
+				</div>
 
-			</p>
-			<h4>Solutions:</h1>
-				<p>
-					Focus Groups | Questionnaires | Opinion Polls | Satisfaction Surveys | Building User Surveys (BUS) | Occupant Thermal Comfort
-
-				</p>	
-			
-		</div>	
-
-		<div class ="infocard" id="survinfocard">
-	
-			<h4>Building Sectors:</h1>
-				<p>
-					House Builders | Civil Contractors | Heritage Sector | Conservation | Registered Social Landlords | Asset Managers
-	
-				</p>
-				<h4>Research workflow:</h1>
-				<p>
-					Concept Design | Spatial Coordination | Building Benchmarking | Pre-Intervention Measurements
-	
-				</p>
-				<h4>Solutions:</h1>
-					<p>
-						InfraRed Thermography | Unmanned Aerial Vehicles (Drones) | PfCO certified | Building Information Modelling (BIM) | Digital Twin 
-	
-					</p>
-			
 		</div>
-
-		<div class = "energyergo" id="servicesid">
-			<div class ="sectitleright">
-				<h1 class ="title-l">Energy</h1>
-				<h2 class ="title-l">Ergonomics.</h2>
-				<object type="image/svg+xml" data="crosses_right_text.svg" class = "crossleft">
-				Your browser does not support SVG
-				</object>
-				<object type="image/svg+xml" data="energyergored.svg" class = "slogo">
-				Your browser does not support SVG
-				</object>
-			</div>
-		</div>	
-	
-		<h5 class= "lastp" id="eergtag" >Energy and carbon consultation</h5>
-	
-		<p class="bcopyitalics" id="energyitalics"> Seamlessly working sustainability and energy efficiency into the <span class="dropcapitalics">design stage</span> of your building’s life cycle. Computational modelling of your building(s) to simulate energy, carbon and cost parameters, delivering multiple scenarios to inform your decision making. </p>
-	
-		<div class ="infocard" id="ergoinfocard">
-			<h4>Building Sectors:</h1>
-				<p>
-					Architectural designers | Clients of design projects | House builders | Asset Managers | Real Estate Surveyors
-	
-				</p>
-				<h4>Research workflow:</h1>
-				<p>
-					At Design Stage | Concept Design | Earlier the Better 
-	
-				</p>
-				<h4>Solutions:</h1>
-					<p>
-						Alignment with Scottish Building Standards Section 7 | Building Performance Evaluation   |   Design stage low energy validation | Life Cycle Assessment | Life Cycle Inventory   |   Domestic and Non-Domestic   |   Desktop study | Digital twin
-	
-					</p>	
-			
-		</div>		
-	
-		<img src="energy_ergo.jpg" alt="Solar PV Array." class = "sectorimageleftalign">	
-	
-		
-		<div class = "bphysics">
-			<div class ="sectitleleft">
-				<h1 class ="title-r">Building</h1>
-				<h2 class ="title-r">Physics.</h2>
-				<object type="image/svg+xml" data="crosses_right_text.svg" class = "crossright">
-					Your browser does not support SVG
-				</object>
-				<object type="image/svg+xml" data="bphys.svg" class = "slogoleft">
-				Your browser does not support SVG
-				</object>
-			</div>
-		</div>	
-	
-		<h5 class= "lastpr" id="bphytag"> Ensuring optimal performance.</h5>
-	
-		<p class="bcopyitalics" id="physicsitalics"> Applying the fundamentals of physics to your project. Using scientific apparatus to provide you with insights into the workings of your building(s). Capturing, analysing and interpreting in-situ measured data, delivering intel on life cycle assessment and energy performance of <span class="dropcapitalics">new build</span> and <span class="dropcapitalics">retrofit</span>  (post-war, historic/traditional, recent, deep and lite-touch) construction.</p>
-	
-		<div class ="infocard" id="physinfocard">
-	
-			<h4>Building Sectors:</h1>
-				<p>
-					Facility Managers | Local Authorities | Registered Social Landlord | Private Consultants | SMEs and System Developers | House Buildings | Asset Managers 
-	
-				</p>
-				<h4>Research workflow:</h1>
-				<p>
-					During & post construction| Pre and post occupation | Life cycle monitoring any age of building
-	
-				</p>
-				<h4>Solutions:</h1>
-					<p>
-						Pre-occupation evaluation | Build Quality Spot Checking | Partners Energy Ergonomics Through Digital Twin | Provide Remedial Strategies | U-Value Testing | Air Tightness Testing | Energy Monitoring | quality control spot checks during construction phase.
-	
-					</p>	
-			
-		</div>	
-
-		<img src="build_phys.jpg" alt="Simulation software." class = "sectorimagerightalign">
-	
-		</div>
-		<div class = "sustainablecommunities">
-			<div class ="sectitleright">
-				<h1 class ="title-l">Sustainable</h1>
-				<h2 class ="title-l">Communities.</h2>
-				<object type="image/svg+xml" data="crosses_right_text.svg" class = "crossleft">
-					Your browser does not support SVG
-				</object>
-				<object type="image/svg+xml" data="scomm.svg" class = "slogo">
-					Your browser does not support SVG
-				</object>
-			</div>
-		</div>	
-	
-		<h5 class= "lastp" id= "scomtag2">Bringing people together.</h5>
-		
-		<p class="bcopyitalics" id="sustainableitalics2"> Working with your stakeholders to validate your decision, through the lens of <span class="dropcapitalics">human factors</span> . Providing you with actionable intel for the people that live in (or near) your buildings. </p>
-	
-		<div class ="infocard" id="comminfocard2">
-			<h4>Building Sectors:</h1>
-				<p>
-					Community groups |
-					Not for Profit Organisations |
-					Housing Associations |
-					Local Authorities
-	
-				</p>
-				<h4>Research workflow:</h1>
-				<p>
-					Goal and Scope | Strategic Planning | KPI setting | Project Preparation
-	
-				</p>
-				<h4>Solutions:</h1>
-					<p>
-						Focus Groups | Questionnaires | Opinion Polls | Satisfaction Surveys | Building User Surveys (BUS) | Occupant Thermal Comfort
-	
-					</p>		
-			
-		</div>	
-	
-		<img src="sust_coms.jpg" alt="Street view." class = "sectorimageleftalign">
-	
-		<div class = "assetsurveying">
-			<div class ="sectitleleft">
-				<h1 class ="title-r">Asset</h1>
-				<h2 class ="title-r">Surveying.</h2>
-				<object type="image/svg+xml" data="crosses_right_text.svg" class = "crossright">
-					Your browser does not support SVG
-				</object>
-				<object type="image/svg+xml" data="aset.svg" class = "slogoleft">
-					Your browser does not support SVG
-				</object>
-			</div>
-		</div>	
-	
-		<h5 class= "lastpr" id="asurvtag2"> Realising value.</h5>
-	
-		<p class="bcopyitalics" id="assetitalics2"> Applying our state-of-the-art <span class="dropcapitalics">surveying technology</span>  to capture information about your building(s) and/or area to be developed. Capturing and developing Photogrammetry and LIDAR scans into an as-built real-world digital model, to inform the creation of a digital twins, and provide accurate models for sizing. </p>
-	
-		<div class ="infocard" id="survinfocard2">
-	
-			<h4>Services:</h1>
-			<p>
-				Photogrammetry |
-				LIDAR |
-				Thermography |
-				Value Surveying 
-
-			</p>
-			<h4>Sectors:</h1>
-			<p>
-				New build domestic |
-				New build commercial |
-				Domestic retrofit 
-
-			</p>
-			<h4>Project Phase:</h1>
-				<p>
-				Project inception |
-				Contruction |
-				post occupancy
-				</p>
-			
-		</div>
-	
-		<img src="drone.jpg" alt="Drone." class = "sectorimagerightalign">
-	
-	</div>
-
-	<div class="support1">
-
-	<h1>How we support you.</h1>	
-	
-	<object type="image/svg+xml" data="crosses_right_text.svg" class = "altcrossright" id="supportcross">
-		Your browser does not support SVG
-	</object>
-	
-	<p class ="bcopy" id="supportfirst">Our themes encapsulate our services, refined to enhance and support your project’s objectives. These themes are modular, scalable and complementary to one another; fully deployed to your workflow, this would enhance your project:-</p>
-
-	<object type="image/svg+xml" data="Themes.svg" class="infographical" id="supportthemes">
-		Your browser does not support SVG
-	</object>
-	</div>
-
-	<div class="support2">
-	<p class="bcopy" id="supportsecond">Together, the four themes offer a turnkey solution, seamlessly calibrated and embedded within the workflow of your project to deliver actionable intel. </p>
-
-	<object type="image/svg+xml" data="Workflow.svg" class="infographical"id="supportworkflow">
-		Your browser does not support SVG
-	</object>
-
-	</div>
-	
-	<div id = "contactscreendesktop">
-			
-		<div id="contactv1"></div>
-		<div id="contacth1"></div>
-			
-		<h1 id="contitledesktop"> How to contact us.</h1>
-
-		<h4 class ="contactpar" id ="linkedpar">If you would like to find out more about the services we provide get in touch <a href="https://form.jotform.com/202614734921351/" target="_blank" rel="noopener">here </a>or email us at <a href="mailto:contact@brs.scot" target="_blank" rel="noopener">contact@brs.scot</a></h4>
-		
-		<h4 id ="smlprint"> Building Research Solutions 2020. All rights reserved.</h4>
-
-		<object type="image/svg+xml" data="logowhite.svg" id ="logoinverse">
-			Your browser does not support SVG
-		</object>
-
-		<object type="image/svg+xml" data="crosses_right_text.svg" id ="finalcrossesdesktop">
-			Your browser does not support SVG
-		</object>
-
-		<ul id="smallnav">
-			<li><a href="#heroid">Home </a></li> |
-			<li><a href="#aboutid">About </a></li> |
-			<li><a href="#servicesid">Services </a></li> |
-			<li><a href="#getintouchid">Contact</a></li>
-		
-		</ul>
-
-		<img src="bluevisual-01.png" alt="Construction Detail ISO" id ="bviz">
-
-			<div id="contactbackground"></div>
-
-			<div class = "getintouch" id ="getintouchid">
-				<div class ="sectitleright">
-				<h1 class ="title-l">How to</h1>
-				<h2 class ="title-l">contact us.</h2>
-				<object type="image/svg+xml" data="crosses_right_text.svg" class = "crossleftfin">
-				Your browser does not support SVG
-				</object>
-			
-			</div>	
-	
-			<div class ="infocardlast">
-		
-		
-			<h4 class ="contactpar">If you would like to find out more about the services we provide get in touch <a href="https://form.jotform.com/202614734921351/" target="_blank" rel="noopener">here </a>or email us at <a href="mailto:contact@brs.scot" target="_blank" rel="noopener">contact@brs.scot</a></h4>
-		
-		
-			<object type="image/svg+xml" data="logowhite.svg" class = "flogo">
+		<div id="asset-surveying">
+			<h1 class="primarytitle show-on-scroll">Asset surveying.</h1>
+			<object type="image/svg+xml" data="aset.svg" id ="assetsurveyinglogo" class ="show-on-scroll">
 			Your browser does not support SVG
 			</object>
+			<h3 class="tagline show-on-scroll" id="building-physics-tag">Realising value. </h3>
+			<p id="asetp" class="body-copy">Applying our state-of-the-art <span class="emp">surveying technology</span>  to capture information about your building(s) and/or area to be developed. Capturing and developing Photogrammetry and LIDAR scans into an as-built real-world digital model, to inform the creation of a digital twins, and provide accurate models for sizing.
+			</p>
+			<h4 id="asetb" class = "info-card-title">Building Sectors:</h4>
+			<p id="asetbp" class="info-card-copy">House Builders | Civil Contractors | Heritage Sector | Conservation | Registered Social Landlords | Asset Managers </p>
+			<h4 id="asetr" class = "info-card-title">Research Workflow:</h4>
+			<p id="asetrp" class="info-card-copy">Concept Design | Spatial Coordination | Building Benchmarking | Pre-Intervention Measurements
+			</p>
+			<h4 id="asets" class = "info-card-title">Solutions:</h4>
+			<p id="asetsp" class="info-card-copy">InfraRed Thermography | Unmanned Aerial Vehicles (Drones) | PfCO certified | Building Information Modelling (BIM) | Digital Twin </p>
+
+			<div id="asetimg" class="image-container-right show-on-scroll">
+				<img src="drone.jpg" alt="Solar PV Array." class = "blockimage-right-sector">
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div id="howwesupport" class ="pageinverse">
+		<div id="support-part-1">
+			<h1 class="primarytitle show-on-scroll">How we support you.</h1>
+			<p class="body-copy-inverse">Our themes encapsulate our services, refined to enhance and support your project’s objectives. These themes are modular, scalable and complementary to one another; fully deployed to your workflow, this would enhance your project:-
+			</p>
+			<object type="image/svg+xml" data="Themes.svg" class="infographical" id="supportthemes">
+				Your browser does not support SVG
+			</object>
+		</div>
+
+
+		<div id="support-part-2">
+			<p class="body-copy">Together, the four themes offer a turnkey solution, seamlessly calibrated and embedded within the workflow of your project to deliver actionable intel.
+			</p>
+			<object type="image/svg+xml" data="Workflow.svg" class="infographical"id="supportworkflow">
+				Your browser does not support SVG
+			</object>
+		</div>
+
+	</div>
+
+	<div id="contact" class ="pageinverse">
+		<h1 class="primarytitle show-on-scroll">How to contact us.</h1>
+		<p class="body-copy-inverse">If you would like to find out more about the services we provide get in touch <a href="https://form.jotform.com/202614734921351/" target="_blank" rel="noopener">here </a>or email us at <a href="mailto:info@brs.scot" target="_blank" rel="noopener">info@brs.scot</a>. For news and updates follow us on <a href="https://www.linkedin.com/company/building-research-solutions/" target="_blank" rel="noopener">LinkedIn.<a></a></p>
+		<h4 class = "info-card-title">What we don't provide:</h4>
+			<p class="info-card-copy-inverse">-Not certified to provide commissioning of Building Services (MEP)</p>
+			<p class="info-card-copy-inverse">-Technical drawings for planning and building warrant consent.</p>
+			<h4 class = "info-card-title">Coming Soon:</h4>
+			<p class="info-card-copy-inverse">-Approved Certifiers of Design – Domestic and Non-Domestic Buildings certified for Air Tightness Testing results to be submitted to Building Standards.
+			</p>
+			<object type="image/svg+xml" data="logowhite.svg" class="infographical" id="logoinverse">
+				Your browser does not support SVG
+			</object>	
+
+			<ul id="smallnav">
+				<li><a href="#herosection">Home </a></li> |
+				<li><a href="#whoweare">About </a></li> |
+				<li><a href="#services">Services </a></li> |
+				<li><a href="#contact">Contact</a></li>
 			
-
-			</div>
-
-			<div class="endsection">
-				<ul class ="smallprintnav">
-					<li><a href="#heroid">Home </a></li> |
-					<li><a href="#aboutid">About </a></li> |
-					<li><a href="#servicesid">Services </a></li> |
-					<li><a href="#getintouchid">Contact</a></li>
-				
-				</ul>
-			</div>
+			</ul>
 			<h4 class ="smallprint"> Building Research Solutions 2020. All rights reserved.</h4>
 	</div>
+
+	<img src="bluevisual.png" alt="Construction isometric" id="blueviz"  class = "desktopviz">
+
+	<script src="show-on-scroll.js"></script>
 
 </body>
 </html>

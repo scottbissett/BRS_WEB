@@ -1,0 +1,302 @@
+.primarytitle {
+    opacity: 0;
+    transform: translate(2rem,0);
+    transition: opacity 1600ms 250ms ease-out,
+                transform 1600ms 250ms ease-out;
+    will-change: opacity translate;
+}
+
+
+.primarytitle.is-visible {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.outlinetitle {
+    opacity: 0;
+    transform: translate(0,2rem);
+    transition: opacity 1600ms 250ms ease-out,
+                transform 1600ms 250ms ease-out;
+    will-change: opacity translate;
+}
+
+
+.outlinetitle.is-visible {
+    opacity: 1;
+    transform: translate(0,0);   
+}
+
+.image-container-left {
+    transform-origin: left;
+    transform: translate(50%,0) rotate(90deg) scale(0,1);
+    transition: transform 600ms 250ms ease-out;
+    will-change: transform;
+}
+
+.image-container-left.is-visible {
+    transform: translate(0,0) rotate(0) scale(1,1);
+}
+
+.blockimage-left {
+    opacity: 0;
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: opacity 600ms 700ms ease-in-out, transform 400ms 700ms ease-in-out;
+    will-change: translate;
+    
+}
+
+.is-visible .blockimage-left,
+.is-visible .blockimage-left-sector  {
+    opacity: 1;
+    transform: scale(1,1);
+} 
+
+.blockimage-left,
+.blockimage-left-sector {
+    opacity: 0;
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: opacity 600ms 700ms ease-in-out, transform 400ms 700ms ease-in-out;
+    will-change: translate;
+    
+}
+
+
+.image-container-right {
+    transform-origin: right;
+    transform: translate(-50%,0) rotate(-90deg) scale(0,1);
+    transition: transform 600ms 250ms ease-out;
+    will-change: transform;
+}
+
+.image-container-right.is-visible {
+    transform: translate(0,0) rotate(0) scale(1,1);
+}
+
+.blockimage-right {
+    opacity: 0;
+    transform: scale(0,1);
+    transform-origin: right;
+    transition: opacity 600ms 700ms ease-in-out, transform 400ms 700ms ease-in-out;
+    will-change: transform;
+    
+}
+
+.blockimage-right-sector {
+    opacity: 0;
+    transform:  translateX(0) scale(0,1);
+    transform-origin: right;
+    transition: opacity 600ms 700ms ease-in-out, transform 400ms 700ms ease-in-out;
+    will-change: transform;
+    
+}
+
+.is-visible .blockimage-right,
+.is-visible .blockimage-right-sector  {
+    opacity: 1;
+    transform: translateX(-2.5rem)  scale(1,1);
+} 
+
+#energy-ergonomics-tag {
+    opacity: 0;
+    transform: translate(-2.5rem,-4.5rem);
+    transition: opacity 1600ms 250ms ease-out,
+                transform 1600ms 250ms ease-out;
+    will-change: opacity transform;
+}
+
+#energy-ergonomics-tag.is-visible {
+    opacity: 1;
+    transform: translate(0,-4.5rem);   
+}
+
+#energyergologo {
+    opacity: 0;
+    transform: rotate(-5deg);
+    transition: transform 800ms 1600ms ease-out, opacity 800ms 1600ms ease-out;
+    will-change: opacity transform;
+}
+
+#energyergologo.is-visible {
+    opacity: 1;
+    transform: rotate(0);
+}
+
+#building-physics-tag {
+    opacity: 0;
+    transform: translate(-1.5rem,-4.5rem);
+    transition: opacity 1600ms 250ms ease-out,
+                transform 1600ms 250ms ease-out;
+    will-change: opacity transform;
+}
+
+#building-physics-tag.is-visible {
+    opacity: 1;
+    transform: translate(2.5rem,-4.5rem);   
+}
+
+#buildingphysicslogo {
+    opacity: 0;
+    transform: rotate(-5deg);
+    transition: transform 800ms 1600ms ease-out, opacity 800ms 1600ms ease-out;
+    will-change: opacity transform;
+}
+
+#buildingphysicslogo.is-visible {
+    opacity: 1;
+    transform: rotate(0);
+}
+
+#sustainable-communities-tag {
+    opacity: 0;
+    transform: translate(-1.5rem,-4.5rem);
+    transition: opacity 1600ms 250ms ease-out,
+                transform 1600ms 250ms ease-out;
+    will-change: opacity transform;
+}
+
+#sustainable-communities-tag.is-visible {
+    opacity: 1;
+    transform: translate(0,-4.5rem);   
+}
+
+#sustcomslogo {
+    opacity: 0;
+    transform: rotate(-5deg);
+    transition: transform 800ms 1600ms ease-out, opacity 800ms 1600ms ease-out;
+    will-change: opacity transform;
+}
+
+#sustcomslogo.is-visible {
+    opacity: 1;
+    transform: rotate(0);
+}
+
+#assetsurveyinglogo {
+    opacity: 0;
+    transform: rotate(-5deg);
+    transition: transform 800ms 1600ms ease-out, opacity 800ms 1600ms ease-out;
+    will-change: opacity transform;
+}
+
+#assetsurveyinglogo.is-visible {
+    opacity: 1;
+    transform: rotate(0);
+}
+
+
+@media screen and (min-width: 982px) { 
+    .image-container-left {
+        transform-origin: left;
+        transform: translate(50%,0) rotate(90deg) scale(0,1);
+        transition: transform 600ms 250ms ease-out;
+        will-change: transform;
+    }
+    
+    .image-container-left.is-visible {
+        transform: translate(0,0) rotate(0) scale(1,1);
+    }
+    
+    .blockimage-left {
+        opacity: 0;
+        transform: scale(0,1);
+        transform-origin: left;
+        transition: opacity 600ms 700ms ease-in-out, transform 400ms 700ms ease-in-out;
+        will-change: translate;
+        
+    }
+    
+    .is-visible .blockimage-left
+     {
+        opacity: 1;
+        transform: scale(1,1);
+    } 
+    
+    .blockimage-left,
+    .blockimage-left-sector {
+        opacity: 0;
+        transform: scale(0,1);
+        transform-origin: left;
+        transition: opacity 600ms 700ms ease-in-out, transform 400ms 700ms ease-in-out;
+        will-change: translate;
+        
+    }
+
+    .image-container-right {
+        transform-origin: left;
+        transform: translate(-5%,0) rotate(-90deg) scale(0,1);
+        transition: transform 600ms 250ms ease-out;
+        will-change: transform;
+    }
+    
+    .image-container-right.is-visible {
+        transform: translate(0,0) rotate(0) scale(1,1);
+    }
+    
+    .blockimage-right {
+        opacity: 0;
+        transform: scale(0,1);
+        transform-origin: right;
+        transition: opacity 600ms 700ms ease-in-out, transform 400ms 700ms ease-in-out;
+        will-change: translate;
+        
+    }
+    
+    .is-visible .blockimage-right
+      {
+        opacity: 1;
+        transform: scale(1,1);
+    } 
+    
+    .blockimage-right,
+    .blockimage-right-sector {
+        opacity: 0;
+        transform: scale(0,1);
+        transform-origin: right;
+        transition: opacity 600ms 700ms ease-in-out, transform 400ms 700ms ease-in-out;
+        will-change: translate;
+        
+    }
+    
+    #energy-ergonomics-tag {
+        opacity: 0;
+        transform: translate(0,0);
+        transition: opacity 1600ms 250ms ease-out,
+                    transform 1600ms 250ms ease-out;
+        will-change: opacity transform;
+    }
+    
+    #energy-ergonomics-tag.is-visible {
+        opacity: 1;
+        transform: translate(0,0rem);   
+    }
+
+    #building-physics-tag {
+        opacity: 0;
+        transform: translate(0,0);
+        transition: opacity 1600ms 250ms ease-out,
+                    transform 1600ms 250ms ease-out;
+        will-change: opacity transform;
+    }
+    
+    #building-physics-tag.is-visible {
+        opacity: 1;
+        transform: translate(0,0rem);   
+    }
+
+    #sustainable-communities-tag {
+        opacity: 0;
+        transform: translate(0,0);
+        transition: opacity 1600ms 250ms ease-out,
+                    transform 1600ms 250ms ease-out;
+        will-change: opacity transform;
+    }
+    
+    #sustainable-communities-tag.is-visible {
+        opacity: 1;
+        transform: translate(0,0rem);   
+    }
+    
+    
+}
