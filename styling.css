@@ -822,7 +822,7 @@ margin-bottom: 1rem;
 .page {
 padding-left: 5vw;
 padding-right: 5vw;	
-/* overflow-y: hidden; */
+overflow-y: hidden;
 
 }
 
@@ -1129,10 +1129,9 @@ height:100vh;
 /* SERVICES DESKTOP STYLING STARTS HERE */
 #services {
 	display: grid;
-	max-height:150vh;
+	min-height:150vh;
 	grid-template-columns:  1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-	padding-bottom: 0;
 }
 /* SERVICES DESKTOP STYLING ENDS HERE */
 /* ENERGY ERGONOMICS DESKTOP STYLING STARTS HERE */
