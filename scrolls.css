@@ -92,7 +92,11 @@
     
 }
 
-.is-visible .blockimage-right,
+.is-visible .blockimage-right {
+    opacity: 1;
+    transform: translateX(0)  scale(1,1);
+}
+
 .is-visible .blockimage-right-sector  {
     opacity: 1;
     transform: translateX(-2.5rem)  scale(1,1);
@@ -297,6 +301,8 @@
         opacity: 1;
         transform: translate(0,0rem);   
     }
+
+
     
     
 }

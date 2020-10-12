@@ -1120,6 +1120,7 @@ height:100vh;
 }
 
 #yellowviz {
+	all: unset;
 	grid-area: 1/1/4/3;
 	align-self: center;
 	justify-self: center;
@@ -1610,6 +1611,7 @@ float: left;
 }
 
 #blueviz {
+	all: unset;
 	display: inline;
 	float: right;
 	height: 120vh;
