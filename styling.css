@@ -1120,7 +1120,6 @@ height:100vh;
 }
 
 #yellowviz {
-	all: unset;
 	grid-area: 1/1/4/3;
 	align-self: center;
 	justify-self: center;
@@ -1180,7 +1179,7 @@ padding-bottom: 0;
 #energyergologo {
 	all: unset;
 	grid-area: 1/1/2/2;
-	height: calc(100% - 1px);
+	max-height: 30vh;
 	width: 100%;
 	border-left: 8px solid var(--brs-title-grey);
 	border-bottom: 1px solid var(--brs-title-grey);
