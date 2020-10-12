@@ -34,7 +34,7 @@ body {
 }
 .page {
     position: relative;
-    min-height:100vh;
+    height: auto;
     background: var(--brs-light-grey-background);
     padding: 2.5rem;
     overflow-x: hidden;
@@ -822,6 +822,7 @@ margin-bottom: 1rem;
 .page {
 padding-left: 5vw;
 padding-right: 5vw;	
+height: auto;
 /* overflow-y: hidden; */
 
 }
