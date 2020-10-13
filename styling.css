@@ -794,7 +794,6 @@ margin-bottom: 1rem;
 
 .smallprint {
 	margin-top: 0.9rem;
-	max-width: 400px;
 	font-size: 0.7rem;
 	color:var(--brs-mid-grey);
 	z-index: 1;
@@ -802,9 +801,14 @@ margin-bottom: 1rem;
 	font-weight: 400;
 	font-style: italic;
 	text-align: center;
+	width: 100%;
 }
 /* NON VISIBLE MOBILE STYLING STARTS HERE */
 .desktopviz {
+	display: none;
+}
+
+.desktop-line {
 	display: none;
 }
 /* NON VISIBLE MOBILE STYLING ENDS HERE */
@@ -939,6 +943,7 @@ height:100vh;
 	padding-top: 0;
 	padding-bottom: 0;
 	overflow-y: hidden;
+	position: relative;
 }
 
 #whoweare h1 {
@@ -984,11 +989,16 @@ height:100vh;
 #whop1 {
 	grid-area: 2/1/3/4;
 	margin-top: 2.5rem;
+	height: calc(50% - 2.5rem);
+	transform:translate(-50%,25%);
 }
 #whop2 {
 	grid-area: 2/1/3/4;
 	align-self: flex-end;
-	margin-bottom: 2.5vh;
+	height:50%;
+	display: inline-block;
+	vertical-align: middle;
+	transform:translate(-50%,25%);
 }
 #whoimagemobile {
 	display: none;
@@ -1102,6 +1112,8 @@ height:100vh;
 #whatp1 {
 	grid-area: 2/-2/3/-1;
 	margin-top: 2.6rem;
+	height: calc(50% - 2.6rem);
+	transform:translate(-50%,25%);
 	
 }
 #whatp2 {
@@ -1109,6 +1121,8 @@ height:100vh;
 	margin-top: 2.6rem;
 	align-self: end;
 	margin-bottom: 0;
+	height: 50%;
+	transform:translate(-50%,25%);
 }
 
 #whatsvg {
@@ -1137,6 +1151,10 @@ height:100vh;
 }
 /* SERVICES DESKTOP STYLING ENDS HERE */
 /* ENERGY ERGONOMICS DESKTOP STYLING STARTS HERE */
+.desktop-line {
+	all:unset;
+	border-top:1px solid var(--brs-title-grey);
+}
 #energy-ergonomics {
 grid-area: 1/1/3/2;
 display: grid;
@@ -1146,13 +1164,18 @@ padding-top: 0;
 padding-bottom: 0;
 }
 
+#energy-ergonomics .desktop-line {
+	grid-area:2/1/3/3;
+	width: 100%;
+	height: 100%;
+}
+
 #energy-ergonomics h1 {
 	all:unset;
 	grid-area: 1/2/2/3;
 	font-size: 2rem;
 	font-weight: 700;
 	color: var(--brs-title-grey);
-	border-bottom: 1px solid var(--brs-title-grey);
 	height: 100%;
 	padding: 0;
 	margin: 0;
@@ -1180,10 +1203,9 @@ padding-bottom: 0;
 #energyergologo {
 	all: unset;
 	grid-area: 1/1/2/2;
-	height: 30vh;
+	height: 100%;
 	width: 20vw;
 	border-left: 8px solid var(--brs-title-grey);
-	border-bottom: 1px solid var(--brs-title-grey);
 	border-top: 1px solid var(--brs-title-grey);
 
 }
@@ -1207,7 +1229,7 @@ padding-bottom: 0;
 
 #energybp {
 	grid-area: 2/-3/3/3;
-	align-self: flex-end;
+	align-self: center;
 	margin-bottom: 1vh;
 }
 
@@ -1217,7 +1239,7 @@ padding-bottom: 0;
 
 #energyrp {
 	grid-area: 3/-3/4/3;
-	align-self: flex-end;
+	align-self: center;
 	margin-bottom: 1vh;
 }
 
@@ -1227,7 +1249,7 @@ padding-bottom: 0;
 
 #energysp {
 	grid-area: 4/-3/5/3;
-	align-self: flex-end;
+	align-self: center;
 	margin-bottom: 1vh;
 }
 
@@ -1244,13 +1266,19 @@ padding-bottom: 0;
 		padding-bottom: 0;
 		}
 
+		#building-physics .desktop-line {
+			grid-area:2/2/3/4;
+			width: 100%;
+			height: 100%;
+		}
+		
+
 #building-physics h1 {
 			all:unset;
 			grid-area: 1/2/2/3;
 			font-size: 2rem;
 			font-weight: 700;
 			color: var(--brs-title-grey);
-			border-bottom: 1px solid var(--brs-title-grey);
 			height: 100%;
 			padding: 0;
 			margin: 0;
@@ -1277,10 +1305,9 @@ padding-bottom: 0;
 #buildingphysicslogo {
 			all: unset;
 			grid-area: 1/3/2/4;
-			height: 30vh;
+			height: 100%;
 			width: 20vw;
 			border-right: 8px solid var(--brs-title-grey);
-			border-bottom: 1px solid var(--brs-title-grey);
 			border-top: 1px solid var(--brs-title-grey);
 		
 }
@@ -1303,7 +1330,7 @@ padding-bottom: 0;
 		
 		#physbp {
 			grid-area: 2/2/3/3;
-			align-self: flex-end;
+			align-self: center;
 			margin-bottom: 0.1vh;
 		}
 		
@@ -1313,7 +1340,7 @@ padding-bottom: 0;
 		
 		#physrp {
 			grid-area: 3/-3/4/3;
-			align-self: flex-end;
+			align-self: center;
 			margin-bottom: 0.1vh;
 		}
 		
@@ -1323,7 +1350,7 @@ padding-bottom: 0;
 		
 		#physsp {
 			grid-area: 4/-3/5/3;
-			align-self: flex-end;
+			align-self: center;
 			margin-bottom: 0.1vh;
 		}
 
@@ -1338,6 +1365,12 @@ padding-bottom: 0;
 	padding-top: 0;
 	padding-bottom: 0;
 	}
+
+	#sustainable-communities .desktop-line {
+		grid-area:2/1/3/3;
+		width: 100%;
+		height: 100%;
+	}
 	
 	#sustainable-communities h1 {
 		all:unset;
@@ -1345,7 +1378,6 @@ padding-bottom: 0;
 		font-size: 2rem;
 		font-weight: 700;
 		color: var(--brs-title-grey);
-		border-bottom: 1px solid var(--brs-title-grey);
 		height: 100%;
 		padding: 0;
 		margin: 0;
@@ -1373,10 +1405,9 @@ padding-bottom: 0;
 	#sustcomslogo {
 		all: unset;
 		grid-area: 1/1/2/2;
-		height: 30vh;
+		height: 100%;
 		width: 20vw;
 		border-left: 8px solid var(--brs-title-grey);
-		border-bottom: 1px solid var(--brs-title-grey);
 		border-top: 1px solid var(--brs-title-grey);
 	
 	}
@@ -1396,7 +1427,7 @@ padding-bottom: 0;
 	
 	#sustbp {
 		grid-area: 2/-3/3/3;
-		align-self: flex-end;
+		align-self: center;
 		margin-bottom: 1vh;
 	}
 	
@@ -1406,7 +1437,7 @@ padding-bottom: 0;
 	
 	#sustrp {
 		grid-area: 3/-3/4/3;
-		align-self: flex-end;
+		align-self: center;
 		margin-bottom: 1vh;
 	}
 	
@@ -1416,7 +1447,7 @@ padding-bottom: 0;
 	
 	#sustsp {
 		grid-area: 4/-3/5/3;
-		align-self: flex-end;
+		align-self: center;
 		margin-bottom: 1vh;
 	}
 
@@ -1432,13 +1463,18 @@ padding-bottom: 0;
 	padding-bottom: 0;
 	}
 
+	#asset-surveying .desktop-line {
+		grid-area:2/2/3/4;
+		width: 100%;
+		height: 100%;
+	}
+
 #asset-surveying h1 {
 		all:unset;
 		grid-area: 1/2/2/3;
 		font-size: 2rem;
 		font-weight: 700;
 		color: var(--brs-title-grey);
-		border-bottom: 1px solid var(--brs-title-grey);
 		height: 100%;
 		padding: 0;
 		margin: 0;
@@ -1465,10 +1501,9 @@ padding-bottom: 0;
 #assetsurveyinglogo {
 		all: unset;
 		grid-area: 1/3/2/4;
-		height: 30vh;
+		height: 100%;
 		width: 20vw;
 		border-right: 8px solid var(--brs-title-grey);
-		border-bottom: 1px solid var(--brs-title-grey);
 		border-top: 1px solid var(--brs-title-grey);
 	
 }
@@ -1489,7 +1524,7 @@ padding-bottom: 0;
 	
 	#asetbp {
 		grid-area: 2/2/3/3;
-		align-self: flex-end;
+		align-self: center;
 		margin-bottom: 0.1vh;
 	}
 	
@@ -1499,7 +1534,7 @@ padding-bottom: 0;
 	
 	#asetrp {
 		grid-area: 3/-3/4/3;
-		align-self: flex-end;
+		align-self: center;
 		margin-bottom: 0.1vh;
 	}
 	
@@ -1509,7 +1544,7 @@ padding-bottom: 0;
 	
 	#asetsp {
 		grid-area: 4/-3/5/3;
-		align-self: flex-end;
+		align-self: center;
 		margin-bottom: 0.1vh;
 	}
 
@@ -1535,22 +1570,35 @@ padding-bottom: 0;
 	grid-template-rows: 1fr 1fr 3fr ;
 }
 
-#support-part-1 h1 {
+#support-part-1  h1 {
 	all:unset;
-	grid-area:1/2/2/2;
+	grid-area: 1/2/2/3;
 	font-size: 2.5rem;
+	align-self: flex-end;
+	color: var(--brs-title-grey);
 	font-weight: 700;
-	color: var(--brs-light-grey-background);
-	border-left: 8px solid var(--brs-light-grey-background) ;
-	border-bottom: 1px solid var(--brs-light-grey-background);
-	height: 100%;
+	
+	
 
 	
 }
 
 #support-part-1 h1::before {
-	display: none;	
+	all:unset;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height:10rem;
+	object-fit: cover;
+	background-image: url(crosses_right_text.svg);
+	background-size: cover;
+	background-color: var(--brs-light-grey-backgroundt);
+	transform: scale(-1, -1) translateY(5rem);
+	z-index: -2;
+
 }
+
+
 
 #support-part-1 h1::after {
 	display: none;	
@@ -1597,34 +1645,164 @@ padding-bottom: 0;
 /* SUPPORT PART 2 DESKTOP STYLING ENDS HERE */
 /* CONTACT DESKTOP STYLING STARTS HERE */
 #contact {
-width: 50vw;
-height: 120vh;
-float: left;
+	display: grid;
+	height:100vh;
+	grid-template-columns:  1fr 1fr;
+	grid-template-rows: 1fr;
+	padding: 0;
+	overflow-y: hidden;
 }
 
-.body-copy-inverse {
-	font-size: 0.7rem;
+#contact-part-1 {
+	grid-area: 1/1/2/2;
+	display: grid;
+	padding: 2.5rem;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 0.5fr ;
+	background-color: var(--brs-title-grey);
+	z-index: -5;
+	position: relative;
+	
 }
 
-.info-card-copy-inverse {
-	font-size: 0.7rem;
+#contact-part-1 h1 {
+	all:unset;
+	grid-area: 1/1/2/3;
+	font-size: 2.5rem;
+	align-self: flex-end;
+	color: var(--brs-title-grey);
+	font-weight: 700;
+	
+	
+
+	
 }
 
-#blueviz {
-	all: unset;
-	display: inline;
-	float: right;
-	height: 120vh;
-	width:49vw;
-	object-fit: contain;
-	background-color: var(--brs-light-grey-background);
-	opacity: 0.5;
+#contact-part-1 h1::before {
+	all:unset;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height:10rem;
+	object-fit: cover;
+	background-image: url(crosses_right_text.svg);
+	background-size: cover;
+	background-color: var(--brs-light-grey-backgroundt);
+	transform: scale(-1, -1) translateY(5rem);
+	z-index: -2;
+
+}
+
+#contact-part-1 h1::after {
+	all:unset;
+}
+
+#conp {
+	all:unset;
+	grid-area: 2/1/3/3;
+	align-self: center;
+	font-size: 0.8rem;
+	color: var(--brs-light-grey-background);
+	font-weight: 700;
+	max-width: 600px;
+}
+
+#conw {
+	all:unset;
+	grid-area: 3/1/4/3;
+	max-width: 600px;
+	border-top: 1px solid var(--brs-mid-grey);
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	color: var(--brs-mid-grey);
+	
+}
+
+
+#conwp1 {
+	all:unset;
+	grid-area: 3/1/4/3;
+	font-size: 0.8rem;
+	color: var(--brs-light-grey-background);
+	font-weight: 700;
+	max-width: 600px;
+	margin-top: 1rem;
+}
+#conwp2 {
+	all:unset;
+	grid-area: 3/1/4/3;
+	font-size: 0.8rem;
+	color: var(--brs-light-grey-background);
+	font-weight: 700;
+	max-width: 600px;
+	margin-top: 2rem;
+}
+#conc {
+	all:unset;
+	grid-area: 3/1/4/3;
+	max-width: 600px;
+	align-self: center;
+	margin-bottom: 2rem;
+	color: var(--brs-mid-grey);
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	border-top: 1px solid var(--brs-mid-grey);
+}
+#concp {
+	all:unset;
+	grid-area: 3/1/4/3;
+	font-size: 0.8rem;
+	color: var(--brs-light-grey-background);
+	font-weight: 700;
+	max-width: 600px;
+	align-self: center;
+	margin-top: 2rem;
+}
+#smallnav {
+	all:unset;
+	grid-area: 5/1/6/3;
+	justify-self: center;
+	align-self: flex-end;
+	margin-bottom: 1rem;
+}
+
+#smallp {
+	all:unset;
+	grid-area: 5/1/6/3;
+	font-size: 0.8rem;
+	color: var(--brs-mid-grey);
+	justify-self: center;
+	align-self: flex-end;
 }
 
 #logoinverse {
-	width: 45vw;
-	height: auto;
-	margin-top: 5rem;
+	all:unset;
+	grid-area: 4/1/5/3;
+	position: absolute;
+	height: 100px;
+	width: auto;
+	justify-self: center;
+	align-self: flex-end;
+	
 }
+
+#contact-part-2 {
+	grid-area:1/2/2/3;
+	background-color: var(--brs-light-grey-background);
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+}
+
+
+
+#blueviz {
+	grid-area: 1/1/2/2;
+	height: auto;
+	width: 100%;
+	align-self: center;
+	justify-self: end;
+}
+
 
 }
