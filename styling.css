@@ -828,7 +828,7 @@ margin-bottom: 1rem;
 padding-left: 5vw;
 padding-right: 5vw;	
 height: auto;
-overflow-y: hidden;
+/* overflow-y: hidden; */
 
 }
 
