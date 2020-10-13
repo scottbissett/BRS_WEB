@@ -827,7 +827,7 @@ margin-bottom: 1rem;
 .page {
 padding-left: 5vw;
 padding-right: 5vw;	
-min-height: 100vh;
+height: 100vh;
 overflow-y: hidden;
 
 }
