@@ -1146,7 +1146,7 @@ height:100vh;
 /* SERVICES DESKTOP STYLING STARTS HERE */
 #services {
 	display: grid;
-	height: auto;
+	height: 200vh;
 	grid-template-columns:  1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
