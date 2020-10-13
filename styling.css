@@ -1148,7 +1148,7 @@ height:100vh;
 	display: grid;
 	height: 200vh;
 	grid-template-columns:  1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 33.3vh 33.3vh 33.3vh 33.3vh 33.3vh 33.3vh;
 }
 /* SERVICES DESKTOP STYLING ENDS HERE */
 /* ENERGY ERGONOMICS DESKTOP STYLING STARTS HERE */
