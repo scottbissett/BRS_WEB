@@ -34,11 +34,12 @@ body {
 }
 .page {
     position: relative;
-    height: auto;
+    height: 100vh;
     background: var(--brs-light-grey-background);
     padding: 2.5rem;
     overflow-x: hidden;
 	z-index: 1;
+
 	
 }
 
