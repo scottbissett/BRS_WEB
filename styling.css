@@ -938,7 +938,7 @@ height:100vh;
 /* GLOBAL DESKTOP STYLING STARTS HERE */
 #whoweare {
 	display: grid;
-	max-height:100vh;
+	height:100vh;
 	grid-template-columns:  0.333fr 0.333fr 0.333fr 1fr 1fr ;
 	grid-template-rows: 1fr 1fr 1fr;
 	padding-top: 0;
@@ -1062,7 +1062,7 @@ height:100vh;
 /* WHAT WE PROVIDE DESKTOP STYLING STARTS HERE */
 #whatweprovide {
 	display: grid;
-	max-height:100vh;
+	height:100vh;
 	grid-template-columns:  1fr 1fr 1fr ;
 	grid-template-rows: 1fr 1fr 1fr;
 	padding-top: 0;
@@ -1146,7 +1146,7 @@ height:100vh;
 /* SERVICES DESKTOP STYLING STARTS HERE */
 #services {
 	display: grid;
-	min-height:150vh;
+	height: auto;
 	grid-template-columns:  1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
