@@ -17,7 +17,7 @@
 	}     	
 
 * {
-	all:initial;
+	all:unset;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1407,8 +1407,8 @@ padding-bottom: 0;
 	#sustcomslogo {
 		all: unset;
 		grid-area: 1/1/2/2;
-		height: 10vh;
-	width: 10vw;
+		height: 100%;
+	width: 100%;
 		border-left: 8px solid var(--brs-title-grey);
 		border-top: 1px solid var(--brs-title-grey);
 	
@@ -1504,7 +1504,7 @@ padding-bottom: 0;
 		all: unset;
 		grid-area: 1/3/2/4;
 		height: 100%;
-	width: 100%;
+		width: 100%;
 		border-right: 8px solid var(--brs-title-grey);
 		border-top: 1px solid var(--brs-title-grey);
 	
